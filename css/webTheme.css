@@ -1,0 +1,25 @@
+:root {
+    --main-color: black;
+    --background-color: white;
+    --main-color-dark-mode: white;
+    --background-color-dark-mode: #1e1e20;
+}
+
+body {
+    margin: 0%;
+    text-align: center;
+    background: var(--background-color);
+    color: var(--main-color);
+}
+
+p {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.toggle-theme {
+    margin-top: 20px;
+    font-size: 40px;
+    width: 15%;
+    border-radius: 10px;
+}
