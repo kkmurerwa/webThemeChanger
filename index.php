@@ -1,3 +1,8 @@
+<!-- I created a database called login with a table called logintable for this project.
+The table has three columns, username, passwrd and theme. The others are VARCHAR while 
+theme is integer with values 1 or 0. If theme is 0, preferred theme is light mode. Else, dark mode 
+-->
+
 <?php
 include 'db_connection.php';
 $conn = OpenCon();
