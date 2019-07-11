@@ -1,9 +1,10 @@
-let currentTheme = 0;
-
+var div = document.getElementById("dom-target");
+var currentTheme = parseInt(div.textContent);
+toggleTheme();
+document.addEventListener("DOMContentLoaded", toggleTheme);
 
 
 function toggleTheme() {
-
     if (currentTheme == 0) {
         document.body.style.background = "var(--background-color-dark-mode)";
         document.body.style.color = "var(--main-color-dark-mode)";
@@ -11,7 +12,7 @@ function toggleTheme() {
         document.getElementById("toggle-theme").style.color = "var(--main-color-dark-mode)"
         document.getElementById("placeholder-text").innerHTML = "I am dark theme.";
         currentTheme = 1;
-    } else {
+    } else if (currentTheme == 1) {
         document.body.style.background = "var(--background-color)";
         document.body.style.color = "var(--main-color)";
         document.getElementById("placeholder-text").innerHTML = "I am light theme.";
